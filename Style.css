@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    height: 50px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.hpd{
+   margin-top: 10px;
+   background-color: rgb(61, 38, 3);
+   color: white;
+   text-align: center;
+   height: 50px;
+   padding-top: 10px; 
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+.item , .item2{
+    width: 45%;
+}
+.item h2{
+    font-size: 52px;
+    line-height: 50px;
+    padding-top: 100px;
+}
+span{
+    color: rgb(61, 38, 3);
+}
+.item2 img{
+    width: 80%;
+    border-radius: 10px;
+}
+.history{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(61, 38, 3);
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.history div p{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer{
+    background-color: rgb(61, 38, 3);
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+footer li{
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    font-size: xx-large;
+    padding-top: 30px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 765px){
+    .content{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .item, .item2{
+        width: 100%;
+    }
+    .item h2{
+        padding-top: 10px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .item2 img{
+        width: 100%;
+
+    }
+    .hpd{
+        font-size: 20px;
+        height: 40px;
+        margin-top: 0;
+    }
+    .history{
+        flex-direction: column;
+    }
+    .history div{
+        margin-top: 20px;
+    }
+    footer{
+        margin-bottom: 2px;
+    }
+}
